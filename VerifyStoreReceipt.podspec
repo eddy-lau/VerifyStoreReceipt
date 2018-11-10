@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "VerifyStoreReceipt"
-  s.version          = "1.0.1"
+  s.version          = "1.1.0"
   s.summary          = "This validator parses and validates the payload and the PKCS7 container itself."
   s.description      = <<-DESC
 This validator parses and validates the payload and the PKCS7 container itself.
@@ -24,7 +24,7 @@ Any measures to make your app cracker proof.
   s.homepage         = "https://github.com/maciekish/VerifyStoreReceiptiOS"
   s.license          = 'MIT'
   s.author           = { "Maciej Swic (Only Pod)" => "maciej@swic.name" }
-  s.source           = { :git => "https://github.com/maciekish/VerifyStoreReceipt.git", :tag => "1.0.1" }
+  s.source           = { :git => "https://github.com/eddy-lau/VerifyStoreReceipt.git", :tag => "1.1.0" }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -33,5 +33,6 @@ Any measures to make your app cracker proof.
 
   s.public_header_files = 'Pod/Classes/*.h'
   s.frameworks = 'StoreKit', 'Security'
-  s.dependency 'OpenSSL-Universal', '1.0.1.j'
+  s.dependency 'openssl-ios-bitcode'
+
 end
